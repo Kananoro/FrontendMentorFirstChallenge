@@ -82,4 +82,10 @@ body{
    border-radius: 13px;
    overflow: hidden;
    background-color: hsla(216, 95, 62);
+
+   &__code{
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   }
 }
