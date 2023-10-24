@@ -1,0 +1,85 @@
+@import "nullstyle.scss";
+//------------------------Обнуление Стилей------------------------
+
+//!Mobile-first
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body{
+   background-color: hsl(212, 45, 89);
+}
+
+.content{
+   height: 100%;
+}
+.wrapper{
+   width: 375px;
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+//Don't need this 'cause all content is already centered
+//
+//@media (min-width: 1440px){
+//   .wrapper{
+//      width: 1440px;
+//   }
+//}
+
+.card {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: 0 auto;
+   border-radius: 20px;
+   background: #FFF;
+   box-shadow: 0px 21px 34px 0px rgba(0, 0, 0, 0.10);
+   width: 320px;
+   height: 500px;
+   background-color: hsl(0, 0, 100);
+   padding: 16px;
+		// .card__title
+
+		&__title {
+         align-self: center;
+         width: 250px;
+         color: #1F3251;
+         text-align: center;
+         font-family: Outfit;
+         font-size: 22px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         margin: 24px 0 16px 0;
+		}
+
+		// .card__subtitle
+
+		&__subtitle {
+         align-self: center;
+         width: 250px;
+         color: #D6E2F0;
+         text-align: center;
+         font-family: Outfit;
+         font-size: 15px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         letter-spacing: 0.15px;
+		}
+}
+.qr {
+   background-image: url(../img/QrBackground.png);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 288px;
+   height: 288px;
+   border-radius: 13px;
+   overflow: hidden;
+   background-color: hsla(216, 95, 62);
+}
